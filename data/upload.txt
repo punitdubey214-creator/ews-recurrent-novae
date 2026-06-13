@@ -1,1 +1,1 @@
-
+I uploaded the light curve for RS Oph; however, the TCrB data is too large for uploading. You can easily download it from the AAVSO lightcurve dataset.
