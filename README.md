@@ -151,20 +151,12 @@ These measures provide information about evolving dynamical structure in the sys
 data/
 │
 ├── TCrB's data can be downloaded from the AAVSO light curve data set.
-├──RSoph.txt ( also comes from AAVSO lightcurve ) 
+├── RSoph.txt ( also comes from AAVSO lightcurve ) 
 notebooks/
 │
 ├── 01_Lightcurve_analysis.ipynb 
-├── 02_MESA_Toy_Model.ipynb
-├── 03_Disc_Instability_Model.ipynb
-└── 04_Gaussian_Accretion_Model.ipynb
+├── 02_MESA_Toy_Models_and_time_scale_study.ipynb
 │
-src/
-│
-├── ews.py
-├── rqa.py
-├── detrending.py
-└── statistics.py
 │
 results/
 │
@@ -173,7 +165,7 @@ results/
 │
 docs/
 │
-└── project_story.md
+└── project_v01.pdf
 │
 README.md
 ```
@@ -197,15 +189,16 @@ Observational Light Curves
            │
            ▼
      Toy Models
-           │
-           ▼
- Slowly Driven Systems
+{ Sin function in accretion rate,
+ Linearly decreasing accretion rate
+(with and without noise ),
+ Disc instability model }
            │
            ▼
  EWS appear before instability
            │
            ▼
- Timescale Study
+     Timescale Study
            │
            ▼
  ~15–18 year evolution
@@ -260,47 +253,39 @@ This work was carried out under the guidance of:
 * Dr. Sneha Kachhara
 
 The project was inspired by previous work on Early Warning Signals in Betelgeuse and by ongoing efforts to understand critical transitions in astrophysical systems.
+Also, we acknowledge the AAVSO lightcurve data set for providing the data for this research. 
+
+---
+## References
+
+1. Scheffer, M., Bascompte, J., Brock, W. A., Brovkin, V., Carpenter, S. R., Dakos, V., Held, H., van Nes, E. H., Rietkerk, M., & Sugihara, G. (2009). *Early-warning signals for critical transitions*. Nature, **461**, 53–59.
+
+2. George, S. V., Kachhara, S., Misra, R., & Ambika, G. (2020). *Early warning signals indicate a critical transition in Betelgeuse*. Astronomy & Astrophysics, **640**, L21.
+
+3. Bury, T., Sujith, R. I., Scheffer, M., Lenton, T. M., & Anand, M. (2021). *Detecting and distinguishing tipping points using spectral early warning signals*. Journal of the Royal Society Interface, **18**, 20200482.
+
+4. Bollimpalli, D. A., Hameury, J.-M., & Lasota, J.-P. (2018). *Disc instabilities and nova eruptions in symbiotic systems: RS Ophiuchi and Z Andromedae*. Monthly Notices of the Royal Astronomical Society, **481**, 5422–5438.
+
+5. Alexander, R. D., Wynn, G. A., King, A. R., & Pringle, J. E. (2011). *Disc instability in RS Ophiuchi: a path to Type Ia supernovae?* Monthly Notices of the Royal Astronomical Society, **418**, 2576–2587.
+
+6. Zamanov, R. K., Stoyanov, K. A., Marchev, V., Minev, M., Marchev, D., Moyseev, M., Marti, J., Bode, M. F., Konstantinova-Antova, R., & Stefanov, S. (2024). *Size of the accretion disc in the recurrent nova T CrB*. Astronomische Nachrichten, 345, e20240031.
+
+7. Zamanov, R., Boeva, S., Latev, G. Y., Semkov, E., Minev, M., Kostov, A., Bode, M. F., Marchev, V., & Marchev, D. (2024). *Accretion in the recurrent nova T CrB: Linking the superactive state to the predicted outburst*. Astronomy & Astrophysics, **685**, A167.
+
+8. Planquart, L., Jorissen, A., & Van Winckel, H. (2025). *Resolving the mass transfer in the symbiotic recurrent nova T Coronae Borealis*. Astronomy & Astrophysics.
+
 
 ---
 
-## Citation
+### Data Sources
 
-If you use this repository in your research, please cite:
-
-```bibtex
-@misc{dubey2026ews,
-  author       = {Punit Dubey},
-  title        = {Early Warning Signals in Recurrent Novae},
-  year         = {2026},
-  publisher    = {GitHub},
-  journal      = {GitHub Repository},
-  url          = {https://github.com/YOUR_USERNAME/ews-recurrent-novae}
-}
-```
-
-### Related References
-
-```bibtex
-@article{George2020Betelgeuse,
-  author  = {George, S. V. and Kachhara, S. and Misra, R. and Ambika, G.},
-  title   = {Early warning signals indicate a critical transition in Betelgeuse},
-  journal = {Astronomy & Astrophysics},
-  volume  = {640},
-  pages   = {L21},
-  year    = {2020}
-}
-
-@article{Scheffer2009EWS,
-  author  = {Scheffer, M. and Bascompte, J. and Brock, W. A. and others},
-  title   = {Early-warning signals for critical transitions},
-  journal = {Nature},
-  volume  = {461},
-  pages   = {53--59},
-  year    = {2009}
-}
-```
+* American Association of Variable Star Observers (AAVSO)
+* MESA (Modules for Experiments in Stellar Astrophysics)
+* T CrB and RS Oph observational light-curve archives
+* Recurrence Quantification Analysis (RQA) framework
 
 ---
+
 
 ## License
 
