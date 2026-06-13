@@ -42,6 +42,8 @@ Unlike T CrB, RS Oph generally does not exhibit robust and consistent EWS signat
 
 This discrepancy motivated the development of a series of theoretical toy models.
 
+### For both, we studied different window sizes and the de-trending parameter. The results are consistent. 
+
 ---
 
 ## Research Evolution
@@ -66,23 +68,23 @@ RS Oph → Weak or absent EWS
 
 The first hypothesis proposed that:
 
-* T CrB contains a stable long-lived accretion disk capable of approaching a critical state gradually.
+* T CrB contains a stable, long-lived accretion disk capable of approaching a critical state gradually.
 * RS Oph contains a short-lived unstable disk that transitions too rapidly to produce EWS.
 
-Subsequent literature review suggested that this explanation was insufficient because both systems may experience disk instabilities.
+A subsequent literature review suggested that this explanation was insufficient because both systems may experience disk instability.
 
 ---
 
 ### Phase 3: Toy Models
 
-To isolate the underlying physics, simplified accretion-driven models were developed.
+To isolate the underlying physics, simplified accretion-driven models were developed. This Toy model comes from MESA Simulation. We change the accretion rate with time for a 1.02 solar mass White dwarf. More details on this implementation can be found in a different repository of mine. ( https://github.com/punitdubey214-creator/MESA_time_dependent_accretion )
 
 These models explored:
 
 * Slowly varying accretion rates
 * Stochastic forcing
 * Thermal instability
-* Disc-instability inspired behavior
+* Disc-instability-inspired behaviour
 * Sudden versus gradual transitions
 
 ---
@@ -109,7 +111,7 @@ The results indicate:
 * Long-timescale evolution generates increasingly strong EWS.
 * Significant EWS appear when the accretion-rate evolution occurs on timescales of approximately **15–18 years**.
 
-This behavior is qualitatively consistent with observations of T CrB and supports the idea that long-duration enhanced mass transfer may be responsible for the observed EWS.
+This behaviour is qualitatively consistent with observations of T CrB and supports the idea that long-duration enhanced mass transfer may be responsible for the observed EWS.
 
 ---
 
@@ -148,21 +150,14 @@ These measures provide information about evolving dynamical structure in the sys
 ```text
 data/
 │
-├── TCrB/
-│   ├── lightcurve.csv
-│   └── processed_data.csv
-│
-├── RSOph/
-│   ├── lightcurve.csv
-│   └── processed_data.csv
-│
+├── TCrB's data can be downloaded from the AAVSO light curve data set.
+├──RSoph.txt ( also comes from AAVSO lightcurve ) 
 notebooks/
 │
-├── 01_TCrB_EWS.ipynb
-├── 02_RSOph_EWS.ipynb
-├── 03_MESA_Toy_Model.ipynb
-├── 04_Disc_Instability_Model.ipynb
-└── 05_Gaussian_Accretion_Model.ipynb
+├── 01_Lightcurve_analysis.ipynb 
+├── 02_MESA_Toy_Model.ipynb
+├── 03_Disc_Instability_Model.ipynb
+└── 04_Gaussian_Accretion_Model.ipynb
 │
 src/
 │
