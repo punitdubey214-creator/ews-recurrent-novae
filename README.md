@@ -151,12 +151,12 @@ These measures provide information about evolving dynamical structure in the sys
 data/
 │
 ├── TCrB's data can be downloaded from the AAVSO light curve data set.
-├── RSoph.txt ( also comes from AAVSO lightcurve ) 
+├── RSoph.txt ( also comes from AAVSO lightcurve )
+|
 notebooks/
 │
 ├── 01_Lightcurve_analysis.ipynb 
 ├── 02_MESA_Toy_Models_and_time_scale_study.ipynb
-│
 │
 results/
 │
