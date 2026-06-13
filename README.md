@@ -160,12 +160,12 @@ notebooks/
 │
 results/
 │
-├── figures/
-└── tables/
+├── figure.png
+└── table.pdf
 │
 docs/
 │
-└── project_v01.pdf
+└── project_report_v01_ews.pdf
 │
 README.md
 ```
